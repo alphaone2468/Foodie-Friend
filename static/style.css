@@ -1,0 +1,140 @@
+
+        html{
+            min-width: 100%;
+            min-height: 100%;
+    
+        }
+  body{
+    
+    min-width: 100%;
+            min-height: 100%;
+    }
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+            /* background-color:bisque; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            opacity: 1;
+
+            font-family: cursive;
+        }
+        form{
+            background-color: white;
+        }
+        .con{
+            margin: -13px;
+            padding: 0px;
+            /* border: 2px solid skyblue; */
+            height: 200px;
+            /* background-color: skyblue; */
+            opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading{
+            font-size: 70px;
+            font-family: cursive;
+            color: black;
+            opacity: 1;
+            /* border: 2px solid red; */
+            margin: 0px;
+        }
+        .inputfiled{
+            /* border: 2px solid red; */
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputfiled input{
+            display: block;
+            font-size: 20px;
+            margin: 10px;
+            width: 350px;
+            border-radius: 6px;
+            margin: 16px;
+            color: black;
+            border: 5px solid black;
+            
+        }
+        .details{
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            margin: 14px;
+            /* border: 2px solid red; */
+        }
+        .swimg{
+            height: 100px;
+        }
+        .swiggyprice{
+            display: inline ;
+            position: relative;
+            bottom: 40px;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+        }
+        
+        .zomatoprice{
+            display: inline;
+            position: relative;
+            bottom: 40px;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+        }
+        .prices{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        img{
+            border-radius: 10px;
+            box-shadow: 7px 7px 15px black;
+        }
+        button{
+            font-size: 20px;
+            padding: 16px 48px;
+            /*margin-top: 15px;*/
+            cursor:pointer;
+            margin-left: 100px;
+            border-radius: 6px;
+            border: 2px solid #131313;
+            background: none;
+            color: #131313;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        button:hover{
+            box-shadow: 0 0 0 5px #fff, 0 0 0 10px #ff7a00;
+            border: 2px solid #ff7a00;
+            transform: scale(0.9);
+            color: black;
+        }
+        .submitbutton{
+            margin-left: 100px;
+
+        }
+        .underdiv{
+            border-radius: 10px;
+            box-shadow: 3px 3px 7px black;
+            background-color:white;
+            background-size: contain;
+            padding: 30px;
+            border:5px solid black;
+        }
+        .underdiv:hover{
+            box-shadow: 0 0 0 5px #fff, 0 0 0 10px #ff7a00;
+        }
+        .helloo{
+            text-align: center;
+            margin-top: 100px;
+        }

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Dost</title>
+    <style>
+        html{
+            min-width: 100%;
+            min-height: 100%;
+    
+        }
+         body{
+    
+            min-width: 100%;
+            min-height: 100%;
+    }
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+            background-color: bisque;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            opacity: 1;
+
+            font-family: cursive;
+        }
+        form{
+            background-color: white;
+        }
+        .con{
+            margin: -13px;
+            padding: 0px;
+            /* border: 2px solid skyblue; */
+            height: 200px;
+            /* background-color: skyblue; */
+            opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading{
+            font-size: 70px;
+            font-family: cursive;
+            color: black;
+            opacity: 1;
+            /* border: 2px solid red; */
+            margin: 0px;
+        }
+        .inputfiled{
+            /* border: 2px solid red; */
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputfiled input{
+            display: block;
+            font-size: 20px;
+            margin: 10px;
+            width: 350px;
+            border-radius: 6px;
+            margin: 16px;
+            color: black;
+            border: 5px solid black;
+            
+        }
+        .details{
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            margin: 14px;
+            /* border: 2px solid red; */
+        }
+        .swimg{
+            height: 100px;
+        }
+        .swiggyprice{
+            display: inline ;
+            position: relative;
+            bottom: 40px;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+        }
+        
+        .zomatoprice{
+            display: inline;
+            position: relative;
+            bottom: 40px;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+        }
+        .prices{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        img{
+            border-radius: 10px;
+            box-shadow: 7px 7px 15px black;
+        }
+        button{
+            font-size: 20px;
+            padding: 16px 48px;
+            /*margin-top: 15px;*/
+            cursor:pointer;
+            margin-left: 100px;
+            border-radius: 6px;
+            border: 2px solid #131313;
+            background: none;
+            color: #131313;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        button:hover{
+            box-shadow: 0 0 0 5px #fff, 0 0 0 10px #ff7a00;
+            border: 2px solid #ff7a00;
+            transform: scale(0.9);
+            color: black;
+        }
+        .submitbutton{
+            margin-left: 100px;
+
+        }
+        .underdiv{
+            border-radius: 10px;
+            box-shadow: 3px 3px 7px black;
+            background-color:white;
+            background-size: contain;
+            padding: 30px;
+            border:5px solid black;
+        }
+        .underdiv:hover{
+            box-shadow: 0 0 0 5px #fff, 0 0 0 10px #ff7a00;
+        }
+        .helloo{
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body >
+    <div class="con">
+        <div>
+            <h1 id="heading">Foodie Dost from food 1</h1>
+            <p class="details">A Website For Online Food Price Comparison</p>
+            
+            
+        </div>
+    </div>
+    <div class="inputfiled">
+        <div class="underdiv">
+            <!-- <input type="text" class="inputf" name="rest" id="search1" placeholder="" onclick="callmee1()" > -->
+            
+
+            <form action="/" method="post">
+                <input type="text" placeholder="Restaurant Name ... " name="restname">
+                <input type="submit" style="cursor:pointer">
+
+            </form>
+            {% for d in list %}
+            {% for key,value in d.items() %}
+            <br>
+                <td>{{key}}</td> : 
+                <td>{{value}}</td></br>
+            </tr>
+            {%endfor%}
+            {%endfor%}
+   
+            
+        </div>
+    </div>
+    <div class="helloo">
+
+        <p class="hello" >Upto 4km in swiggy deliveryCharge is free </p>
+        <p class="hello">Upto 4km in zomato deliveryCharge is Rs /- 24 </p>
+        
+    </div>
+    <p></p>
+    <details>menu
+     <summary>
+        menu
+     </summary>
+     Chicken Big Mac</br>
+ McSpicy Fried Chicken 5 Pcs + 2 Coke</br>
+ McSpicy Chicken Burger</br>
+ McVeggie Burger</br>
+McSpicy Fried Chicken - One Pc</br>
+ Big Spicy Chicken Wrap</br>
+ McSaver McSpicy Chicken Meal</br>
+ 2 McVeggie Burger</br>
+ McChicken Burger + Fries (R)</br>
+ McSpicy Paneer Burger</br>
+ 2 Fries (R)</br>
+ Fries (L)</br>
+ McSpicy Chicken Wings- 4 Pc</br>
+ Fries (M)</br>
+ Mexican cheesy Fries</br>
+ McAloo Tikki Burger</br>
+ Big Spicy Paneer Wrap</br>
+ McSaver McVeggie Meal</br>
+ McSaver McSpicy Paneer Meal</br>
+ McVeggie + McAloo Tikki Burger</br>
+ Chicken McNuggets - 6 Pcs</br>
+ Fries (R)</br>
+ McChicken Burger</br>
+ McCheese Burger Veg</br>
+ McSaver Pizza McPuff</br>
+ Chicken Maharaja Mac.</br>
+ Mexican McAloo Tikki Burger</br>
+ McSaver McAloo Tikki</br>
+ Piri Piri</br>
+ McSpicy Chicken Wings- 8 Pc + 2 Coke</br>
+ 2 Iced Coffee</br>
+ Veg Pizza McPuff</br>
+ McSpicy Chicken Wings- 2 Pc</br>
+ Grilled Chicken & Cheese Burger</br>
+ McSaver Chicken Kebab Burger</br>
+ McSaver McChicken Meal</br>
+ Coke</br>
+ Mcspicy Fried Chicken 2 Pcs</br>
+ Veg Maharaja Mac</br>
+ Chocolate Shake</br>
+ McSaver Chicken Big Mac Meal</br>
+ 2 Chicken Big Mac + 1 Fries (L) + 2 Coke</br>
+ Chicken Big Mac + Cheesy Veg Nuggets 4 Pc + Coke</br>
+ Chicken Big Mac + Chicken McNuggets 6 Pc + Coke</br>
+ Chicken Big Mac + Chicken Wings 2 Pc + Coke</br>
+ Chicken Big Mac + Coke</br>
+ Chicken Big Mac + McChicken Burger + Coke</br>
+ Chicken Big Mac + McSpicy Fried Chicken 1 Pc + Coke</br>
+ Chicken Big Mac + McVeggie Burger + Coke</br>
+ Chicken Big Mac + Veg Maharaja Mac + 2 Coke</br>
+ Chicken Maharaja Mac</br>
+ Chicken Kebab Burger</br>
+ Corn & Cheese Burger</br>
+ Masala McEgg Burger</br>
+ McCheese Burger Chicken.</br>
+ McCheese Burger Veg.</br>
+ Triple Cheese Chicken Burger.</br>
+ Triple Cheese Veg Burger.</br>
+ Grilled Chicken & Cheese Burger.</br>
+ Corn & Cheese Burger.</br>
+ McSaver McCheese Burger Meal.</br>
+ McSaver McCheese Burger Chicken Meal.</br>
+ McSaver Triple Cheese Chicken Burger Meal.</br>
+ McSaver Triple Cheese Veg Burger Meal.</br>
+ McSaver Grilled Chicken & Cheese Burger Meal.</br>
+ McSaver Corn & Cheese Burger Meal.</br>
+ Mexican cheesy fries.</br>
+ Classic Cheesy Dip.</br>
+ McSpicy Fried Chicken 2 Pc + McSpicy Chicken Wings- 4 Pc + 2 Coke</br>
+ McSpicy Fried Chicken 10 Pc + 2 Fries (L) + 4 Coke</br>
+ Cheesy Nugget Veg Bites 9 Pc + Fries (M)</br>
+ 2 McVeggie Burger + 2 Corn & Cheese Burger + 2 Fries (L)</br>
+ 4 McAloo Tikki + 2 Fries (M) + 2 Coke</br>
+ McSaver Triple Cheese Chicken Burger Meal</br>
+ McSaver Triple Cheese Veg Burger Meal</br>
+ Triple Cheese Chicken Burger</br>
+ Triple Cheese Veg Burger</br>
+ McSaver Chicken Maharaja Mac Meal.</br>
+ Veg Maharaja Mac.</br>
+ McSaver Veg Maharaja Mac Meal.</br>
+ Chicken Big Mac.</br>
+ McSaver McSpicy Premium Chicken Meal</br>
+ McSpicy Premium Chicken Burger</br>
+ McSpicy Premium Veg Burger</br>
+ McSaver McSpicy Premium Veg Meal</br>
+ McSaver McCheese Burger Veg Meal</br>
+ McCheese Burger Chicken</br>
+ McSaver McCheese Burger Chicken Meal</br>
+ McSaver Big Spicy Chicken Wrap Meal</br>
+ McSaver McAloo Tikki Meal</br>
+ McSaver Big Spicy Paneer Wrap Meal</br>
+ McSaver Chicken Maharaja Mac Meal</br>
+ McSaver Veg Maharaja Mac Meal</br>
+ McSaver Mexican McAloo Tikki Meal</br>
+ McSaver Chicken Kebab Burger Meal</br>
+ McSaver Grilled Chicken & Cheese Burger Meal</br>
+ McSaver Corn & Cheese Burger Meal</br>
+ McSpicy Chicken Wings- 2 Pc.</br>
+ McSpicy Chicken Wings- 4 Pc.</br>
+ McSpicy Chicken Wings- 8 Pc + 2 Coke.</br>
+ McSpicy Fried Chicken 10 Pc + 2 Fries (L) + 4 Coke.</br>
+ McSpicy Fried Chicken 2 Pc + McSpicy Chicken Wings- 4 Pc + 2 Coke.</br>
+ Mcspicy Fried Chicken 4 Pcs + 1 Coke</br>
+ Chicken Strips 10 Pcs + 2 Coke</br>
+ McSpicy Fried Chicken 3 Pcs + 2 Coke</br>
+ McSaver Cheesy Veg Nuggets 4 Pc</br>
+ McSaver Chicken Strips (2 Pc)</br>
+ McSaver Chicken Nuggets (4 Pc)</br>
+ McSaver Masala McEgg</br>
+ McSaver Small Fries</br>
+ McSaver Small Wedges</br>
+ McSaver Mexican McAloo Tikki</br>
+ Hot Chocolate</br>
+ Mocha</br>
+ McCafe Americano (R)</br>
+ Cappuccino</br>
+ Moroccan Mint Green Tea</br>
+ Strawberry Green Tea</br>
+ English Breakfast</br>
+ Flat White</br>
+ McCafe-Mocha Frappe</br>
+ McCafe-Chocolate Frappe</br>
+ McCafe-Classic Coffee</br>
+ McCafe-Ice Coffee</br>
+ Mccafe Iced Americano</br>
+ 2 Cappuccino</br>
+ Kit Kat Frappe</br>
+ Strawberry Chiller</br>
+ Green Apple Chiller</br>
+ Lemon Chiller</br>
+ Strawberry Shake</br>
+ American Mud Pie</br>
+ Mango Smoothie</br>
+ Mixed Berry Smoothie</br>
+ Berry Lemonade Splash Regular</br>
+ Vanilla Chocolate Muffin</br>
+ Chocolate Chip Muffin</br>
+ Coke zero can</br>
+ Fanta</br>
+ Sprite</br>
+ Vedica Zen Water Bottle</br>
+ Mixed Fruit Beverage</br>
+ McAloo Tikki Happy Meal now with Happy Readers</br>
+ McVeggie Happy Meal now with Happy Readers</br>
+ McChicken Happy Meal now with Happy Readers</br>
+ Birthday Party Package- McVeggie now with Happy Readers</br>
+ Birthday Party Package- McChicken now with Happy Readers</br>
+ McEgg Happy Meal now with Happy Readers</br>
+ Chatpata Spice Mix</br>
+ Fries (M) + Chatpata Mix</br>
+ Classic Cheesy Dip</br>
+ Cheesy Veg Nuggets - 2 Pc</br>
+ Cheesy Veg Nuggets - 4 Pc</br>
+ Cheesy Veg Nuggets 4 Pc + Piri Piri Spice Mix</br>
+ Cheesy Veg Nuggets - 9 Pc</br>
+ Cheesy Veg Nuggets 9 Pc + Piri Piri Spice Mix</br>
+ Chicken McNuggets - 9 Pcs</br>
+ Chicken McNuggets - 20 Pcs</br>
+ Chicken Strips Three Pieces</br>
+ Chicken Strips Five Pieces</br>
+ Masala Wedges (L)</br>
+ Masala Wedges (M)</br>
+ Masala Wedges (R)</br>
+ Chicken Strips Two Pieces</br>
+ Loaded Masala Wedges</br>
+ Tomato Ketchup Sachet</br>
+ Chilli Sauce Sachet</br>
+ Banana Caramel Sundae (M)</br>
+ McFlurry Banana Caramel Oreo (M)</br>
+ McFlurry Banana Caramel Oreo (R)</br>
+ McFlurry Banana Caramel Oreo (M) BOGO</br>
+ McFlurry Banana Caramel Oreo (R) BOGO</br>
+ Kit Kat McFlurry (M)</br>
+ Kit Kat McFlurry (R)</br>
+ Kit Kat Sundae (M)</br>
+ McFlurry Oreo</br>
+ Soft Serve Hot Fudge</br>
+ Soft Serve Strawberry</br>
+ Fries (M) + Piri Piri Mix</br>
+ Two Soft Serve Hot Fudge (M)</br>
+ Two McFlurry Oreo (S)</br>
+ 2 Coke</br>
+ 2 McAloo Tikki + 2 Fries (L)</br>
+ McSpicy Chicken Burger + Veg Pizza McPuff</br>
+ McAloo Tikki + Fries (R)</br>
+ Corn & Cheese Burger + Veg Pizza McPuff</br>
+ Corn & Cheese Burger + Fries ®</br>
+ Mexican McAloo Tikki Burger + Fries (R)</br>
+ McChicken Burger + Veg Pizza McPuff</br>
+ McVeggie Burger + Veg Pizza McPuff</br>
+ McVeggie Burger + Fries (R)</br>
+ McChicken Burger + Fries (L)</br>
+ Black Forest Mcflurry (M) BOGO  </br>
+    </details>
+    
+</body>
+</html>
